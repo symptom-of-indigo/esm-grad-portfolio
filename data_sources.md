@@ -3,11 +3,11 @@
 ## U.S. Census Bureau
 
 - [data.census.gov](https://data.census.gov/)
+- S0801
+- S0802
+- B08141
+- B25044
 
-### Interesting datasets to consider
-- DP03 (Economic Characteristics) # just added
-- DP04 (Housing Characteristics)
-- DP05 (Demographic and Housing Estimates)
 
 ## SANDAG (San Diego Association of Governments) Open Data Portal
 
