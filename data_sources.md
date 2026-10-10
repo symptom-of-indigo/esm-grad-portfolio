@@ -12,7 +12,3 @@
 ## SANDAG (San Diego Association of Governments) Open Data Portal
 
 - [SANDAG Open Data Portal](https://opendata.sandag.org/)
-
-## EPA Smart Location Database (SLD) 
-
-- Chris, this might be helpful whenb you compare San Diego County to San Diego (City) 
