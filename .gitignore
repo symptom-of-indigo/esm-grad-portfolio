@@ -226,12 +226,12 @@ outputdata/
 *census_api_key*
 
 # Ignore scratch / draft notebooks
-sanDiego.ipynb
-**/sanDiego.ipynb
 *Copy*.ipynb
 **/*Copy*.ipynb
 sanDiego_with_City_and_CES.ipynb
 **/sanDiego_with_City_and_CES.ipynb
+*sanDiego-City*.ipynb
+**/*sanDiego-City*.ipynb
 Untitled*.ipynb
 **/Untitled*.ipynb
 .git_backup
