@@ -1,0 +1,59 @@
+# usf-engy680-urban-energy-fall2026
+Shared code for Urban Energy and Climate course materials. Developed by Assistant Prof. [Zack Subin](https://www.usfca.edu/faculty/zack-subin).
+
+## Contents:
+- [TUTORIAL.md](./TUTORIAL.md): Instructions to set up environment, use Jupyter, and use Github Desktop
+- [environment.yml](./environment.yml): Platform-independent environment file
+- [hw1_and_demo/](./hw1_and_demo/):
+    - [simple_stock_rollover_HW1.ipynb](./hw1_and_demo/simple_stock_rollover_HW1.ipynb): US vehicle stock rollover and cumulative emissions exercise
+- [hw2_templates/](./hw2_templates/):
+    - [vmt_explore.ipynb](./hw2_templates/vmt_explore.ipynb): Geospatial analysis of CA VMT data focused on SF (Read first)
+    - [wildfire_risk_explore.ipynb](./hw2_templates/wildfire_risk_explore.ipynb): Geospatial analysis of wildfire risk data focused on SF (Read second)
+    - [census_helper.py](./hw2_templates/census_helper.py): Helper module used in wildfire_risk_explore to import ACS data
+- 🤓 [class_demo_CMIP6_figure/](./class_demo_CMIP6_figure/): Script to average global warming over the continental US
+
+## Setup
+
+We will work through these steps together in class, so just use this README as a basic reference. **You can see more complete instructions in the [TUTORIAL.md](./TUTORIAL.md).**
+
+### Install conda from command-line (recommended for Macs) or graphical Anaconda distribution:
+
+- `brew install miniconda`
+- _or_ Download Miniconda or full Anaconda distribution from https://www.anaconda.com/download and run installer.
+
+### Sync environment:
+
+Navigate to repo home directory (i.e. `[YOUR_LOCAL_PATH]/usf-engy680-urban-energy-fall2026/`) and run in terminal:
+
+`conda env create -f environment.yml -n [MY_ENVIRONMENT_NAME]`
+
+replacing [MY_ENVIRONMENT_NAME] with a name for your local environment like engy680.
+
+#### On a PC you can run a terminal inside the Anaconda application, or you can create the environment entirely using the application **[Needs testing]**:
+1.  Open the Anaconda Navigator application.
+2.  Click the Environments tab on the left.
+3.  At the bottom of the environments list, click the Import button (if you don't see it, look for a + or gear icon and select Import).
+4.  Enter a Name for the new environment.
+5.  Under Specification File, browse to your edited .yml file.
+6.  Click Import / Create and wait for the solver to finish. This can take several minutes.
+
+## Edit notebooks in Jupyter Lab
+
+From the command-line, first activate your new environment and then open jupyter-lab:
+
+`conda activate [MY_ENVIRONMENT_NAME]`
+
+`jupyter-lab`
+
+This should launch a new browser window in Jupyter Lab.
+
+Alternatively, you can activate your new environment and launch Jupyter Lab directly from the Anaconda Navigator.
+
+Follow the navigation buttons in Jupyter Lab to open the desired notebook file (files ending in '.ipynb') or create a new one. It autosaves as you edit or run cells.
+
+When you're done you can shut down Jupyter Lab, and you can check in your code to your personal private course repo using GitHub Desktop.
+
+## Advanced: to regenerate the TUTORIAL.pdf
+Install pandoc and basictex, then run:
+
+`pandoc TUTORIAL.md --pdf-engine=lualatex --include-in-header=emoji-fallback.tex --toc  -o TUTORIAL.pdf`
