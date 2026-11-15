@@ -219,8 +219,10 @@ __marimo__/
 
 # User-added
 .DS_Store
-inputdata/*
-outputdata/*
-*/inputdata/*
-*/outputdata/*
+inputdata/
+outputdata/
+**/inputdata/**
+**/outputdata/**
 *census_api_key*
+The858/
+**/The858/**
